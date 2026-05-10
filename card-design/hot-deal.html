@@ -1,11 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <title>hot deals card</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body></body>
-  </html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+<!--------------------------Copy hot-deals structure from here------------------------->
+  <!-- Single Product Card -->
+  <div class="w-56 cursor-pointer group border-2 border-green-900 rounded-md">
+
+    <!-- Image Box -->
+    <div class="bg-gray-100 w-full h-48 overflow-hidden  rounded-md relative">
+          <!-- Dynamically change discount with js -->
+  <span class="absolute top-1 right-1 bg-red-600 text-white text-xs px-1 py-1 rounded-md z-10">
+    10% off
+  </span>
+      <!----------------------dynamic image from fakeapi--------------------------->
+      <img 
+        src="your-image.jpg" 
+        alt="Product" 
+        class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+      />
+    </div>
+
+    <!-----------------------dynamic Product Info ------------------------------->
+    <div class="flex justify-between items-start mt-2 p-1  h-12  ">
+      <div>
+        <p class="text-sm font-bold text-gray-800">Basic Tee</p>
+        <p class="text-sm text-gray-500">Black</p>
+      </div>
+      <div>
+        <p class="text-5x1 font-semibold text-black ">$20</p>
+        <p class="text-sm font-semibold text-grey-100 line-through">$35</p>
+      </div>
+    </div>
+
+  </div>
+<!----------------------------------------end of copy-------------------------------->
+</body>
 </html>
