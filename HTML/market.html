@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market - Bhai Bhai traders - Online Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- navbar -->
+      <nav
+        class="bg-green-600 shadow px-6 flex items-stretch justify-between sticky top-0 z-50"
+      >
+        <span
+          href="#bhai-bhai-traders"
+          class="bg-green-900 text-white font-bold font-serif text-3x1 px-4 py-4 shrink-0"
+        >
+          Bhai Bhai Traders
+        </span>
+        <div class="flex items-center px-4 py-2.5 gap-2 flex-1">
+          <input
+            type="text"
+            placeholder="Search for items"
+            class="bg-white text-grey px-4 py-1.5"
+          />
+          <button class="bg-green-900 text-white px-4 py-1.5">Search</button>
+        </div>
+
+        <div class="flex items-stretch">
+          <ul href="#" class="flex text-white font-medium">
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >
+                Market
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >
+                Review
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >
+                Cart
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center pl-4">
+            <a
+              href="#"
+              class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-900 transition"
+            >
+              Login
+            </a>
+          </div>
+        </div>
+      </nav>
+
+
+ 
+  <!-- Filter Bar -->
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center gap-3">
+    <span class="text-sm font-semibold text-gray-600">Filter:</span>
+    <button class="bg-green-900 text-white text-sm px-4 py-1.5 rounded-full hover:bg-green-800 transition">All</button>
+    <button class="border border-green-900 text-green-900 text-sm px-4 py-1.5 rounded-full hover:bg-green-100 transition">Cattle</button>
+    <button class="border border-green-900 text-green-900 text-sm px-4 py-1.5 rounded-full hover:bg-green-100 transition">Sheep</button>
+    <button class="border border-green-900 text-green-900 text-sm px-4 py-1.5 rounded-full hover:bg-green-100 transition">Goat</button>
+    <button class="border border-green-900 text-green-900 text-sm px-4 py-1.5 rounded-full hover:bg-green-100 transition">Camel</button>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 px-6 py-6">
+<!--------------------------Copy hot-deals structure from here------------------------->
+<!-- Single Product Card -->
+<div class="w-56 cursor-pointer group border-2 border-green-900 rounded-md">
+
+  <!-- Image Box -->
+  <div class="bg-gray-100 w-full h-72 overflow-hidden rounded-md">
+    <!----------------------dynamic image from fakeapi--------------------------->
+    <img 
+      src="your-image.jpg" 
+      alt="Product" 
+      class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+    />
+  </div>
+
+  <!-----------------------dynamic Product Info ------------------------------->
+  <div class="flex flex-col p-3 gap-2">
+    
+    <!-- Name and Variant/Catagory-->
+    <div>
+      <p class="text-sm font-bold text-gray-800">Basic Tee</p>
+      <p class="text-xs text-gray-500"></p>
+    </div>
+
+    <!-- Price -->
+    <div class="flex items-center gap-2">
+      <p class="text-lg font-black text-green-900">$20</p>
+    </div>
+
+    <!-- Add to Cart Button -->
+    <button class="w-full bg-green-900 text-white text-sm font-semibold py-2 rounded-md hover:bg-green-800 transition">
+      Add to Cart
+    </button>
+
+  </div>
+
+</div>
+<!----------------------------------------end of copy-------------------------------->
+
+    </div>
+  </section>
+  
+<!----Footer----->
+<footer class="bg-green-900 text-white mt-10">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 gap-6">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-xl font-black mb-3">Bhai Bhai Traders</h3>
+      <p class="text-green-300 text-sm">Your trusted shop for quality products.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="font-bold mb-3">Quick Links</h4>
+      <ul class="flex flex-col gap-2 text-green-300 text-sm">
+        <li><a href="#" class="hover:text-white transition">Home</a></li>
+        <li><a href="#" class="hover:text-white transition">Shop</a></li>
+        <li><a href="#" class="hover:text-white transition">About</a></li>
+        <li><a href="#" class="hover:text-white transition">Review</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="font-bold mb-3">Contact Us</h4>
+      <ul class="flex flex-col gap-2 text-green-300 text-sm">
+        <li> Nasimul Islam</li>
+        <li> Iftemam Rafi</li>
+        <li> Mahi Chowdhury</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-green-800 text-center py-4 text-green-400 text-sm">
+    © 2026 Bhai Bhai Traders. All rights reserved.
+  </div>
+
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
