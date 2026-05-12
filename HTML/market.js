@@ -33,11 +33,49 @@ function createProduct(product) {
   return card;
 }
 
+let allProducts = [];
+
 fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
   .then((data) => {
+    allProducts = data;
     const market_grid = document.getElementById("market-grid");
     data.forEach((product) => {
       market_grid.appendChild(createProduct(product));
     });
   });
+
+const all = document.getElementById("all");
+const electronics = document.getElementById("electronics");
+const jewelery = document.getElementById("jewelery");
+const gents = document.getElementById("gents");
+const ladies = document.getElementById("ladies");
+const filter = document.getElementById("filter");
+
+function update_button(n) {
+  for (let button of filter.children) {
+    button.classList.remove("bg-green-800");
+  }
+  filter.children[n].classList.add("bg-green-800");
+}
+
+function filterProducts(category, btnIndex) {
+  update_button(btnIndex);
+  const market_grid = document.getElementById("market-grid");
+  market_grid.innerHTML = "";
+
+  const filtered =
+    category === "all"
+      ? allProducts
+      : allProducts.filter((p) => p.category === category);
+
+  filtered.forEach((product) => {
+    market_grid.appendChild(createProduct(product));
+  });
+}
+
+all.addEventListener("click", () => filterProducts("all", 0));
+electronics.addEventListener("click", () => filterProducts("electronics", 1));
+jewelery.addEventListener("click", () => filterProducts("jewelery", 2));
+gents.addEventListener("click", () => filterProducts("men's clothing", 3));
+ladies.addEventListener("click", () => filterProducts("women's clothing", 4));
