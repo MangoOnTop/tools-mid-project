@@ -79,3 +79,22 @@ electronics.addEventListener("click", () => filterProducts("electronics", 1));
 jewelery.addEventListener("click", () => filterProducts("jewelery", 2));
 gents.addEventListener("click", () => filterProducts("men's clothing", 3));
 ladies.addEventListener("click", () => filterProducts("women's clothing", 4));
+
+function applyFilters() {
+  const searchQuery = document
+    .getElementById("search")
+    .value.trim()
+    .toLowerCase();
+
+  const filtered = allProducts.filter((p) =>
+    p.title.toLowerCase().includes(searchQuery),
+  );
+  const market_grid = document.getElementById("market-grid");
+  market_grid.innerHTML = "";
+  filtered.forEach((product) => {
+    market_grid.appendChild(createProduct(product));
+  });
+}
+
+const search = document.getElementById("search_button");
+search.addEventListener("click", applyFilters);
