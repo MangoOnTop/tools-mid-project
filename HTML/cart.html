@@ -1,132 +1,226 @@
 <!doctype html>
 <html lang="en">
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <title>Cart - Bhai Bhai traders - Online Shop</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-green-100">
-      <!-- navbar -->
-      <nav
-        class="bg-green-600 shadow px-6 flex items-stretch justify-between sticky top-0 z-50"
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cart - Bhai Bhai traders - Online Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-green-100">
+    <!-- navbar -->
+    <nav
+      class="bg-green-600 shadow px-6 flex items-stretch justify-between sticky top-0 z-50"
+    >
+      <span
+        class="bg-green-900 text-white font-bold font-serif text-3x1 px-4 py-4 shrink-0"
       >
-        <span
-          href="#bhai-bhai-traders"
-          class="bg-green-900 text-white font-bold font-serif text-3x1 px-4 py-4 shrink-0"
-        >
-          Bhai Bhai Traders
-        </span>
-        <div class="flex items-center px-4 py-2.5 gap-2 flex-1">
-          <input
-            type="text"
-            placeholder="Search for items"
-            class="bg-white text-grey px-4 py-1.5"
-          />
-          <button class="bg-green-900 text-white px-4 py-1.5">Search</button>
+        Bhai Bhai Traders
+      </span>
+      <div class="flex items-center px-4 py-2.5 gap-2 flex-1">
+        <input
+          type="text"
+          placeholder="Search for items"
+          class="bg-white text-grey px-4 py-1.5"
+        />
+        <button class="bg-green-900 text-white px-4 py-1.5">Search</button>
+      </div>
+      <div class="flex items-stretch">
+        <ul class="flex text-white font-medium">
+          <li>
+            <a
+              href="home.html"
+              class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="market.html"
+              class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >Market</a
+            >
+          </li>
+          <li>
+            <a
+              href="home.html#review"
+              class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >Review</a
+            >
+          </li>
+          <li>
+            <a
+              href="#footer"
+              class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="cart.html"
+              class="flex items-center px-6 py-4 hover:bg-green-800 transition"
+              >Cart</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center pl-4">
+          <a
+            href="#"
+            class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-900 transition"
+            >Login</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="max-w-7xl mx-auto px-6 py-8">
+      <h2 class="text-3xl font-bold text-green-900 mb-8">Your Cart</h2>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Left: Cart Items -->
+        <div class="flex flex-col gap-4 flex-1" id="cart-items">
+          <div
+            class="flex items-center gap-4 bg-white border-2 border-green-100 rounded-xl p-4 shadow-sm"
+          >
+            <!-- Product Info -->
+            <div class="flex flex-col gap-1 flex-1">
+              <p class="text-sm font-bold text-gray-800 line-clamp-1">
+                Basic Tee
+              </p>
+              <p class="text-xs text-gray-400">Black</p>
+              <p class="text-base font-black text-green-900 mt-1">$20.00</p>
+            </div>
+            <!-- Quantity Controls -->
+            <div class="flex items-center gap-2 shrink-0">
+              <button
+                class="w-7 h-7 rounded-full border-2 border-green-900 text-green-900 font-bold text-sm flex items-center justify-center hover:bg-green-900 hover:text-white transition"
+              >
+                −
+              </button>
+              <span class="text-sm font-bold text-gray-800 w-4 text-center"
+                >1</span
+              >
+              <button
+                class="w-7 h-7 rounded-full border-2 border-green-900 text-green-900 font-bold text-sm flex items-center justify-center hover:bg-green-900 hover:text-white transition"
+              >
+                +
+              </button>
+            </div>
+            <!-- Remove Button -->
+            <button
+              class="ml-2 text-red-400 hover:text-red-600 transition shrink-0"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6m2 0H7m2 0V5a1 1 0 011-1h4a1 1 0 011 1v2"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div class="flex items-stretch">
-          <ul href="#" class="flex text-white font-medium">
-            <li>
-              <a
-                href="home.html"
-                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="market.html"
-                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
-              >
-                Market
-              </a>
-            </li>
-            <li>
-              <a
-                href="home.html#review"
-                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
-              >
-                Review
-              </a>
-            </li>
-            <li>
-              <a
-                href="#footer"
-                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center px-6 py-4 hover:bg-green-800 transition"
-              >
-                Cart
-              </a>
-            </li>
-          </ul>
-          <div class="flex items-center pl-4">
-            <a
-              href="#"
-              class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-900 transition"
+        <!-- Right: Order Summary -->
+        <div class="w-full lg:w-80 shrink-0">
+          <div
+            class="bg-white border-2 border-green-100 rounded-xl p-6 shadow-sm flex flex-col gap-4 sticky top-6"
+          >
+            <h3 class="text-lg font-bold text-green-900">Order Summary</h3>
+            <div class="flex flex-col gap-2 text-sm text-gray-600">
+              <div class="flex justify-between">
+                <span>Subtotal</span>
+                <span class="font-semibold text-gray-800">$20.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Shipping</span>
+                <span class="font-semibold text-gray-800">$5.00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Discount</span>
+                <span class="font-semibold text-red-500">− $2.00</span>
+              </div>
+            </div>
+            <div
+              class="border-t border-gray-100 pt-4 flex justify-between text-base font-bold text-green-900"
             >
-              Login
+              <span>Total</span>
+              <span>$23.00</span>
+            </div>
+            <!-- Coupon -->
+            <div class="flex gap-2 w-full">
+              <input
+                type="text"
+                placeholder="Coupon code"
+                class="min-w-0 flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-green-900"
+              />
+              <button
+                class="shrink-0 bg-green-900 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-800 transition"
+              >
+                Apply
+              </button>
+            </div>
+            <!-- Checkout Button -->
+            <button
+              class="w-full bg-green-900 text-white font-bold py-3 rounded-xl hover:bg-green-800 transition text-sm mt-2"
+            >
+              Proceed to Checkout →
+            </button>
+            <!-- Continue Shopping -->
+            <a
+              href="market.html"
+              class="text-center text-sm text-green-900 font-semibold hover:underline"
+            >
+              ← Continue Shopping
             </a>
           </div>
         </div>
-      </nav>
-
-  <!-- Page Title -->
-  <div class="max-w-7xl mx-auto px-6 py-8">
-    <h2 class="text-3xl font-bold text-green-900 mb-8">Your Cart </h2>
-
-    <div class="flex flex-col lg:flex-row gap-8"> <!----place for order-list(left)----> </div>
-
-      <!-- Right: Order Summary -->
-      <div class="w-full lg:w-80 shrink-0"> <!---place for order-list(right)---> </div>
-
-    </div>
-  </div>
-
-  <!-- Footer -->
-<footer class="bg-green-900 text-white mt-10">
-  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 gap-6">
-
-    <div>
-      <h3 class="text-xl font-black mb-3">Bhai Bhai Traders</h3>
-      <p class="text-green-300 text-sm">Your trusted shop for quality products.</p>
+      </div>
     </div>
 
-    <div>
-      <h4 class="font-bold mb-3">Quick Links</h4>
-      <ul class="flex flex-col gap-2 text-green-300 text-sm">
-        <li><a href="#" class="hover:text-white transition">Home</a></li>
-        <li><a href="market.html" class="hover:text-white transition">Market</a></li>
-        <li><a href="#" class="hover:text-white transition">About</a></li>
-        <li><a href="#" class="hover:text-white transition">Review</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="font-bold mb-3">Contact Us</h4>
-      <ul class="flex flex-col gap-2 text-green-300 text-sm">
-        <li> Nasimul Islam</li>
-        <li> Iftemam Rafi</li>
-        <li> Mahi Chowdhury</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="border-t border-green-800 text-center py-4 text-green-400 text-sm">
-    © 2026 Bhai Bhai Traders. All rights reserved.
-  </div>
-
-</footer>
-
-</body>
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white mt-10" id="footer">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-xl font-black mb-3">Bhai Bhai Traders</h3>
+          <p class="text-green-300 text-sm">
+            Your trusted shop for quality products.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold mb-3">Quick Links</h4>
+          <ul class="flex flex-col gap-2 text-green-300 text-sm">
+            <li>
+              <a href="home.html" class="hover:text-white transition">Home</a>
+            </li>
+            <li>
+              <a href="market.html" class="hover:text-white transition"
+                >Market</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li><a href="#" class="hover:text-white transition">Review</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-3">Contact Us</h4>
+          <ul class="flex flex-col gap-2 text-green-300 text-sm">
+            <li>Nasimul Islam</li>
+            <li>Iftemam Rafi</li>
+            <li>Mahi Chowdhury</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-green-800 text-center py-4 text-green-400 text-sm"
+      >
+        © 2026 Bhai Bhai Traders. All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
