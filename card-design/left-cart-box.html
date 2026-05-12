@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>Cart - Bhai Bhai traders - Online Shop</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-green-100">
+
+
+     <div class="flex flex-col gap-4 flex-1" id="cart-items">
+
+        <div class="flex items-center gap-4 bg-white border-2 border-green-100 rounded-xl p-4 shadow-sm">
+
+  <!-- Product Info -->
+  <div class="flex flex-col gap-1 flex-1">
+    <p class="text-sm font-bold text-gray-800 line-clamp-1">Basic Tee</p>
+    <p class="text-xs text-gray-400">Black</p>
+    <p class="text-base font-black text-green-900 mt-1">$20.00</p>
+  </div>
+
+  <!-- Quantity Controls -->
+  <div class="flex items-center gap-2 shrink-0">
+    <button class="w-7 h-7 rounded-full border-2 border-green-900 text-green-900 font-bold text-sm flex items-center justify-center hover:bg-green-900 hover:text-white transition">−</button>
+    <span class="text-sm font-bold text-gray-800 w-4 text-center">1</span>
+    <button class="w-7 h-7 rounded-full border-2 border-green-900 text-green-900 font-bold text-sm flex items-center justify-center hover:bg-green-900 hover:text-white transition">+</button>
+  </div>
+
+  <!-- Remove Button -->
+  <button class="ml-2 text-red-400 hover:text-red-600 transition shrink-0">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6m2 0H7m2 0V5a1 1 0 011-1h4a1 1 0 011 1v2"/>
+    </svg>
+  </button>
+
+</div>
+
+        </body>

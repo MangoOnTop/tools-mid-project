@@ -9,41 +9,34 @@
 <body class="bg-gray-50 flex items-center justify-center min-h-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
 <!--------------------------Copy market structure from here------------------------->
 <!-- Single Product Card -->
-<div class="w-56 cursor-pointer group border-2 border-green-900 rounded-md">
-
+<div class="w-56 h-96 cursor-pointer group border-2 border-green-800 rounded-md flex flex-col bg-white">
   <!-- Image Box -->
-  <div class="bg-gray-100 w-full h-72 overflow-hidden rounded-md">
-    <!----------------------dynamic image from fakeapi--------------------------->
-    <img 
-      src="your-image.jpg" 
-      alt="Product" 
+  <div class="bg-gray-100 w-full h-2/3 overflow-hidden rounded-md relative">
+    <img
+      src="your-image.jpg"
+      alt="Product"
       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
     />
   </div>
 
-  <!-----------------------dynamic Product Info ------------------------------->
-  <div class="flex flex-col p-3 gap-2">
-    
-    <!-- Name and Variant/Catagory-->
+  <!-- Product Info -->
+  <div class="flex flex-col p-3 flex-1">
     <div>
-      <p class="text-sm font-bold text-gray-800">Basic Tee</p>
-      <p class="text-xs text-gray-500">Catagory</p>
+      <p class="text-sm font-bold text-gray-800 line-clamp-1">Basic Tee</p>
+      <p class="text-xs text-gray-500 line-clamp-1">Black</p>
     </div>
-
-    <!-- Price -->
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2 mt-2">
       <p class="text-lg font-black text-green-900">$20</p>
     </div>
-
-    <!-- Add to Cart Button -->
-    <button class="w-full bg-green-900 text-white text-sm font-semibold py-2 rounded-md hover:bg-green-800 transition">
-      Add to Cart
-    </button>
-
+    <!-- Button -->
+    <div class="mt-auto">
+      <button class="w-full bg-green-900 text-white text-sm font-semibold py-2 rounded-md hover:bg-green-200 transition">
+        Add to Cart
+      </button>
+    </div>
   </div>
-
 </div>
-<!----------------------------------------end of copy-------------------------------->
+<!----------------------------------------end of todays-offer copy-------------------------------->
 
 </body>
 </html>
