@@ -7,28 +7,28 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 flex items-center justify-center min-h-screen grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
-<!--------------------------Copy hot-deals structure from here------------------------->
+   <!--------------------------Copy todays-offer structure from here------------------------->
 <!-- Single Product Card -->
-<div class="w-56 cursor-pointer group border-2 border-green-900 rounded-md">
+<div class="w-56 cursor-pointer group border-2 border-green-500 rounded-md">
 
   <!-- Image Box -->
   <div class="bg-gray-100 w-full h-72 overflow-hidden rounded-md relative">
     <!-- Dynamically change discount with js -->
-    <span class="absolute top-1 right-1 bg-red-600 text-white text-xs px-2 py-1 rounded-md z-10">
+    <span class="absolute top-1 right-1 bg-red-500 text-white text-xs px-2 py-1 rounded-md z-10">
       10% off
     </span>
     <!----------------------dynamic image from fakeapi--------------------------->
-    <img 
-      src="your-image.jpg" 
-      alt="Product" 
+    <img
+      src="your-image.jpg"
+      alt="Product"
       class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
     />
   </div>
 
   <!-----------------------dynamic Product Info ------------------------------->
   <div class="flex flex-col p-3 gap-2">
-    
-    <!-- Name and Catagory -->
+
+    <!-- Name and Variant -->
     <div>
       <p class="text-sm font-bold text-gray-800">Basic Tee</p>
       <p class="text-xs text-gray-500">Black</p>
@@ -41,16 +41,15 @@
     </div>
 
     <!-- Add to Cart Button -->
-    <div class="mt-auto">
-      <button class="w-full bg-green-900 text-white text-sm font-semibold py-2 rounded-md hover:bg-green-800 transition">
-        Add to Cart
-      </button>
-    </div>
+    <button class="w-full bg-green-900 text-white text-sm font-semibold py-2 rounded-md hover:bg-green-200 text-color-black transition">
+      Add to Cart
+    </button>
 
   </div>
-
 </div>
-<!----------------------------------------end of copy-------------------------------->
+<!----------------------------------------end of todays-offer copy-------------------------------->
+</body>
+</html>
 
 </body>
 </html>
