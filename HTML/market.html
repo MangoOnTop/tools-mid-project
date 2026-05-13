@@ -127,6 +127,70 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"
       ></div>
     </section>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Left: Cart Items -->
+
+      <div class="flex flex-col gap-4 flex-1" id="cart-items"></div>
+
+      <!-- Right: Order Summary -->
+      <div class="w-full lg:w-80 shrink-0">
+        <div
+          class="bg-white border-2 border-green-100 rounded-xl p-6 shadow-sm flex flex-col gap-4 sticky top-6"
+        >
+          <h3 class="text-lg font-bold text-green-900">Order Summary</h3>
+          <div class="flex flex-col gap-2 text-sm text-gray-600">
+            <div class="flex justify-between">
+              <span>Subtotal</span>
+              <span class="font-semibold text-gray-800" id="sub_total">$0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Shipping</span>
+              <span class="font-semibold text-gray-800" id="ship">$0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Discount</span>
+              <span id="discount" class="font-semibold text-red-500">− $0</span>
+            </div>
+          </div>
+          <div
+            class="border-t border-gray-100 pt-4 flex justify-between text-base font-bold text-green-900"
+          >
+            <span>Total</span>
+            <span id="total">$0</span>
+          </div>
+          <!-- Coupon -->
+          <div class="flex gap-2 w-full">
+            <input
+              id="coupon_code"
+              type="text"
+              placeholder="Coupon code"
+              class="min-w-0 flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-green-900"
+            />
+            <button
+              class="shrink-0 bg-green-900 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-800 transition"
+              id="apply"
+            >
+              Apply
+            </button>
+          </div>
+          <!-- Checkout Button -->
+          <button
+            class="w-full bg-green-900 text-white font-bold py-3 rounded-xl hover:bg-green-800 transition text-sm mt-2"
+          >
+            Proceed to Checkout →
+          </button>
+          <!-- Continue Shopping -->
+          <a
+            href="market.html"
+            class="text-center text-sm text-green-900 font-semibold hover:underline"
+          >
+            ← Continue Shopping
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!----Footer----->
     <footer class="bg-green-900 text-white mt-10">
       <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-3 gap-6">
